@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>catPhotoApp</title>
+</head>
+<body>
+    <main>
+    <h1>CatPhotosApp</h1>
+    <section>
+    <h2>Cat Photos</h2>
+    <!-- TODO:Add link to cat photos-->
+    <p>See more cat photos in our gallery.</p>
+    <!--The alt attribute's text is used for screen readers to improve accessibility and is displayed if the image fails to load.-->
+    <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back"></a>
+    <p>See more <a href target="_blank"="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+</section>
+<section>
+    <h2>Cat Lists</h2>
+    <h3>Things cat love:</h3>
+    <!--UL is used for list and it means unordered list-->
+    <ul>
+        <li>cat nip</li>
+        <li>laser pointers</li>
+        <li>lasagna</li>
+    </ul>
+    <figure>
+    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+<!--A figure caption (figcaption) element is used to add a caption to describe the image contained within the figure element.-->
+     <figcaption>Cats <em>love</em> lasagna</figcaption>
+    </figure>        
+    <h3>Top 3 things cats hate:</h3>
+    <ol>
+      <li>flea treatment</li>
+      <li>thunder</li>
+      <li>other cats</li>
+      </ol>       
+       <figure>
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+        <figcaption>Cats <strong>hate</strong> other cats</figcaption>
+    </figure>
+</section>
+<section>
+    <h2>cat form</h2>
+    <!--The action attribute indicates where form data should be sent.-->
+    <form action="https://freecatphotoapp.com/submit-cat-photo">
+    <!--The fieldset element is used to group related inputs and labels together in a web form. fieldset elements are block-level elements, meaning that they appear on a new line.-->
+    <fieldset>
+        <!--The legend element acts as a caption for the content in the fieldset element. It gives users context about what they should enter into that part of the form.-->
+    <legend>Is your cat a indoor or outdoor cat?</legend>
+        <!--label elements are used to help associate the text for an input element with the input element itself (especially for assistive technologies like screen readers).--> 
+    <!--The id attribute is used to identify specific HTML elements.-->
+    <label><input checked id="indoor" type="radio name="indoor-outdoor" value="indoor">Indoor</label>
+    <label><input id="outdoor" type="radio name="indoor-outdoor" value="outdoor">Outdoor</label>
+    </fieldset>
+    <fieldset>
+        <legend>What's your cat's personality</legend>
+        <!--checkboxes for questions that may have more than one answer.-->
+        <input checked name="personality" id="loving" type="checkbox" value="loving"> <label for="loving">Loving></label> 
+           <input name="personality" id="lazy" type="checkbox" value="lazy"> <label for="lazy">Lazy</label>
+           <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">Energetic</label>
+
+    </fieldset>
+      <!--Placeholder text is  used to give people a hint about what kind of information to enter into an input.--> 
+    <input required type="text" name="cayphotourl">
+      <input type="text" placeholder="cat photo URL">
+<!-- the button element is used to create a clickable button.-->
+<button type="submit"</button>
+</form>
+</section>
+</main>
+<footer>
+    <p>No Copyright - <a href="https://www.freecodecamp.com">freeCodeCamp.org</a></p>
+</footer>
+</body>
+</html>
